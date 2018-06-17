@@ -20,7 +20,7 @@ for hero in heroes_names:
   heroes.append(name)
 
 def getHeroes():
-  path = os.path.join(os.getcwd(), 'output')
+  path = os.path.join(os.getcwd(), 'talents')
   if not os.path.exists(path):
     os.makedirs(path)
 
@@ -39,7 +39,7 @@ def getHeroes():
 
     print "Getting " + hero_portrait_url
 
-    hero_path = os.path.join(os.getcwd(), 'output/' + hero)
+    hero_path = os.path.join(os.getcwd(), 'talents/' + hero)
     if not os.path.exists(hero_path):
       print 'Creating dir:' + hero_path
       os.makedirs(hero_path)
